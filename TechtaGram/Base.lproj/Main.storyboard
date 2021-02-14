@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechtaGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-vR-nPu">
+                                <rect key="frame" x="47" y="174" width="320" height="320"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="028-kp-vGg"/>
+                                    <constraint firstAttribute="height" constant="320" id="vmq-va-mAb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Ies-0B-var">
+                                <rect key="frame" x="56.5" y="539" width="301" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-Hw-Opa">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2C6-Np-c14"/>
+                                            <constraint firstAttribute="width" constant="120" id="ulW-Y5-dZH"/>
+                                        </constraints>
+                                        <state key="normal" title="camera"/>
+                                        <connections>
+                                            <action selector="takePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="SB1-PT-jnF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJi-jm-X7B">
+                                        <rect key="frame" x="181" y="0.0" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="KoA-qG-nVI"/>
+                                            <constraint firstAttribute="height" constant="60" id="vQH-xN-FcH"/>
+                                        </constraints>
+                                        <state key="normal" title="Album"/>
+                                        <connections>
+                                            <action selector="openAlbum" destination="BYZ-38-t0r" eventType="touchUpInside" id="HA1-SE-pL3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="sKW-dx-hgb"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-h7-G3o">
+                                <rect key="frame" x="14" y="654" width="386" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRE-5j-xws">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.93493407964706421" green="0.73080569505691528" blue="0.93522900342941284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="AoA-ty-zWe"/>
+                                            <constraint firstAttribute="height" constant="60" id="u36-sp-Fw1"/>
+                                        </constraints>
+                                        <state key="normal" title="Filter"/>
+                                        <connections>
+                                            <action selector="colorFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASO-NR-rAN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-Af-iSE">
+                                        <rect key="frame" x="133" y="0.0" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.93493407964706421" green="0.73080569505691528" blue="0.93522900342941284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xx6-48-9My"/>
+                                            <constraint firstAttribute="width" constant="120" id="y4X-G6-MN0"/>
+                                        </constraints>
+                                        <state key="normal" title="Share"/>
+                                        <connections>
+                                            <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="00I-Qn-oHe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sov-Tv-YJu">
+                                        <rect key="frame" x="266" y="0.0" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.93493407964706421" green="0.73080569505691528" blue="0.93522900342941284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="VmX-Gc-rY0"/>
+                                            <constraint firstAttribute="width" constant="120" id="agy-g2-499"/>
+                                        </constraints>
+                                        <state key="normal" title="Save.."/>
+                                        <connections>
+                                            <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYc-0O-asn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fWd-vR-nPu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="7TD-MP-rj1"/>
+                            <constraint firstItem="fWd-vR-nPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZd-F4-sjv"/>
+                            <constraint firstItem="tJV-h7-G3o" firstAttribute="top" secondItem="Ies-0B-var" secondAttribute="bottom" constant="55" id="Tk3-93-Xcg"/>
+                            <constraint firstItem="tJV-h7-G3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aua-27-CKE"/>
+                            <constraint firstItem="Ies-0B-var" firstAttribute="top" secondItem="fWd-vR-nPu" secondAttribute="bottom" constant="45" id="oeO-Jt-HID"/>
+                            <constraint firstItem="Ies-0B-var" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYv-iN-OmL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraImageView" destination="fWd-vR-nPu" id="r93-ye-UUk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
